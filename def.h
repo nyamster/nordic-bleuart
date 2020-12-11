@@ -4,6 +4,11 @@
 #include <stdint.h>
 #include <string.h>
 
+#include "ble_advdata.h"
+#include "ble_nus.h"
+#include "SEGGER_RTT.h"
+
+
 #define IS_SRVC_CHANGED_CHARACT_PRESENT 0                                           /**< Include the service_changed characteristic. If not enabled, the server's database cannot be changed for the lifetime of the device. */
 
 #if (NRF_SD_BLE_API_VERSION == 3)
@@ -40,5 +45,14 @@
 #define BUFFER_SIZE                     1024                                        /**< Cicular buffer size. */
 
 extern uint16_t m_conn_handle;
+
+extern uint16_t                         m_name_cnt;
+extern bool                             DATA_FLAG;
+extern uint16_t                         m_data_length;
+extern uint16_t                         m_data_cnt;
+extern bool                             ADC_FLAG;
+extern uint16_t                         global_cnt;
+extern uint8_t                          m_data[1024];
+extern ble_nus_t                        m_nus;                                      /**< Structure to identify the Nordic UART Service. */
 
 #endif

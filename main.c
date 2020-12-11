@@ -49,31 +49,11 @@
  * This application uses the @ref srvlib_conn_params module.
  */
 
-#include <stdint.h>
-#include <string.h>
-#include "nordic_common.h"
-#include "nrf.h"
-#include "ble_hci.h"
-#include "ble_advdata.h"
-#include "ble_advertising.h"
-#include "ble_conn_params.h"
-#include "softdevice_handler.h"
-#include "app_timer.h"
-#include "app_button.h"
-#include "ble_nus.h"
-#include "app_uart.h"
-#include "app_util_platform.h"
-#include "bsp.h"
-#include "bsp_btn_ble.h"
-#include "SEGGER_RTT.h"
-
 #include "def.h"
 #include "circular_buffer.h"
 #include "uart.h"
 #include "ble.h"
 #include "ble_init.h"
-
-uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    /**< Handle of the current connection. */
 
 circular_buf_t*                         cbuf;
 

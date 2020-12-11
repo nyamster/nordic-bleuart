@@ -35,6 +35,7 @@ SRC_FILES += \
   $(PROJ_DIR)main.c \
   $(PROJ_DIR)uart.c \
   $(PROJ_DIR)ble.c \
+  $(PROJ_DIR)ble_uart.c \
   $(PROJ_DIR)ble_init.c \
   $(PROJ_DIR)utils.c \
   $(PROJ_DIR)circular_buffer.c \

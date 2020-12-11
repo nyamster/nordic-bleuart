@@ -8,9 +8,8 @@
 #include "softdevice_handler.h"
 #include "ble_nus.h"
 #include "bsp_btn_ble.h"
-#include "SEGGER_RTT.h"
 
-#include "utils.h"
+#include "ble_uart.h"
 
 void ble_stack_init(void);
 void services_init(void);
