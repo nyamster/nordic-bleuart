@@ -94,7 +94,8 @@ _build/nrf51422_xxac_main.c.o: main.c \
  ../../../components/libraries/bsp/bsp_btn_ble.h \
  ../../../components/libraries/bsp/bsp.h \
  ../../../external/segger_rtt/SEGGER_RTT.h \
- ../../../external/segger_rtt/SEGGER_RTT_Conf.h utils.h
+ ../../../external/segger_rtt/SEGGER_RTT_Conf.h def.h circular_buffer.h \
+ uart.h ble.h utils.h ble_init.h
 
 /home/fmv/opt/gcc-arm-none-eabi-9-2020-q2-update/lib/gcc/arm-none-eabi/9.3.1/include/stdint.h:
 
@@ -290,4 +291,14 @@ _build/nrf51422_xxac_main.c.o: main.c \
 
 ../../../external/segger_rtt/SEGGER_RTT_Conf.h:
 
+def.h:
+
+circular_buffer.h:
+
+uart.h:
+
+ble.h:
+
 utils.h:
+
+ble_init.h:
