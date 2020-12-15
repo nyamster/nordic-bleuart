@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug (pyOCD)",
+            "servertype": "pyocd",
+            "cwd": "${workspaceRoot}",
+
+            //"preLaunchTask": "cd ${workspaceRoot}/pca10028/s130/armgcc/ ; make",
+            "runToMain": true,
+            "executable": "./pca10028/s130/armgcc/_build/nrf51422_xxac.elf",
+            "device": "nrf51822",
+            "serverpath": "pyocd gdb"
+            //"svdFile": "${workspaceRoot}/.vscode/STM32F303.svd",
+            // "swoConfig": {
+            //     "enabled": true,
+            //     "cpuFrequency": 8000000,
+            //     "swoFrequency": 2000000,
+            //     "source": "probe",
+            //     "decoders": [
+            //         { "type": "console", "label": "ITM", "port": 0 }
+            //     ]
+            // }
+        }
+    ]
+}
